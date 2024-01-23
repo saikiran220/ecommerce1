@@ -18,6 +18,8 @@ import PrivateRoutes from './pages/PrivateRoutes';
 
 
 function App() {
+
+  // const contextvalue='hlo this is from useContext'
   return (
     <>
        <AuthProvider>

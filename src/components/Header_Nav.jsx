@@ -12,7 +12,11 @@ const Header_Nav = () => {
     const handlelogout = () => {
         logout()
     }
+    // const {userdetails}=useAuth()
+    const {user}=useAuth()
+    console.log( 'user',user)
     return (
+        
         <div>
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
@@ -61,18 +65,14 @@ const Header_Nav = () => {
                                     <NavLink className='nav-link' to='/wishlist'>Wishlist</NavLink>
                                 </li>
                                 <li className='nav-item'>
-                                    {/* <p><img src={}></img></p> */}
-                                    {/* <NavLink className='nav-link' to='/bag'>
-                                     
-
-                                    </NavLink> */}
+                                    
                                        <Dropdown className='profile'>
                                             <Dropdown.Toggle  id="dropdown-basic">
                                                 <CgProfile />
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>
                                                 {/* <Dropdown.Item><Button onClick={() => handlelogout()}>logOut</Button></Dropdown.Item> */}
-                                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">{user}</Dropdown.Item>
                                                 <Dropdown.Item  onClick={() => handlelogout()}>logout</Dropdown.Item>
                                             </Dropdown.Menu>
                                         </Dropdown>
