@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Container, Nav, Navbar, Form, InputGroup, Button,Dropdown } from 'react-bootstrap'
 import { useAuth } from '../pages/AuthContext'
 import { CgProfile } from "react-icons/cg";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const Header_Nav = () => {
@@ -63,6 +64,9 @@ const Header_Nav = () => {
                                 </li>
                                 <li className='nav-item'>
                                     <NavLink className='nav-link' to='/wishlist'>Wishlist</NavLink>
+                                </li>
+                                <li className='nav-item'>
+                                    <NavLink className='nav-link' to='/cart'><FaShoppingCart /></NavLink>
                                 </li>
                                 <li className='nav-item'>
                                     

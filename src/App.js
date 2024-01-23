@@ -15,6 +15,7 @@ import ProfilePage from './pages/ProfilePage';
 import { AuthProvider } from './pages/AuthContext';
 import LogInPage from './pages/LogInPage';
 import PrivateRoutes from './pages/PrivateRoutes';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
                 <Route className="nav-link" path='/studio' element={<Studiopage/>}/>
                 <Route className="nav-link" path='/wishlist' element={<Wishlistpage/>}/>
                 <Route className="nav-link" path='/bag' element={<Bagpage/>}/>
+                <Route className="nav-link" path='/cart' element={<Cart/>}/>
                 <Route className="nav-link" path='/profile' element={<ProfilePage/>}/>          
               </Routes>
             </PrivateRoutes>
