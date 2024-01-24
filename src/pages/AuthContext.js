@@ -14,7 +14,11 @@ export const AuthProvider=({children})=>{
     const[authenticated,setAuthenticated]=useState(initialLogedInpage)
 
     const contextValue="hello this is from useContext"
+    const storeSomeData="useContextdata based on useContext"
 
+    // const[cartData,setCartData]=useState[{}]
+
+   
     const[user,setUser]=useState(getusername)
 
     const login=(loginvalues)=>{
@@ -28,7 +32,7 @@ export const AuthProvider=({children})=>{
         setAuthenticated(false)
     }
     return(
-        <AuthContext.Provider value={{login,logout,authenticated ,contextValue,user}}>
+        <AuthContext.Provider value={{login,logout,authenticated ,contextValue,user,storeSomeData}}>
            {children}
         </AuthContext.Provider>
     )

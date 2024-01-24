@@ -18,6 +18,7 @@ import PrivateRoutes from './pages/PrivateRoutes';
 import Cart from './pages/Cart';
 
 
+
 function App() {
 
   // const contextvalue='hlo this is from useContext'
@@ -41,6 +42,7 @@ function App() {
                 <Route className="nav-link" path='/wishlist' element={<Wishlistpage/>}/>
                 <Route className="nav-link" path='/bag' element={<Bagpage/>}/>
                 <Route className="nav-link" path='/cart' element={<Cart/>}/>
+                
                 <Route className="nav-link" path='/profile' element={<ProfilePage/>}/>          
               </Routes>
             </PrivateRoutes>
