@@ -30,10 +30,7 @@ const handleClick=(id,quantity)=>{
   console.log('id',id)
   console.log('quantity',quantity)  
 }
-const handleParams=(items)=>{
-   console.log(items)
-   setProducts(items)
-}
+
   return (
     <>
       <Header_Nav />
